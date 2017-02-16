@@ -7,7 +7,7 @@ Its beeing run from /etc/dehydrated/certs/yourdomain.com and uses the sophos cer
 
 quick'n'dirty:
 
-1. Upload Lets Encrypt Certificate Authority https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem and import that to your sophos
+1. Upload Lets Encrypt Certificate Authority https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem and import that to your sophos, also create a dummy certificate for your domain (we need that to update to)
 2. Create a Ubuntu based (other distros should work) machine (i used a docker container) with dehydrated that pulls certs for your domain
     i used the excellent tutorial from Benjamin Bryan, using Dehydrated and dns-01 challenge for lets encrypt --> https://b3n.org/intranet-ssl-certificates-using-lets-encrypt-dns-01/
 3. Make some ssh-keys and put the pub key into your sophos to access loginuser (need root once to get cert REF names)
