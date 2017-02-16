@@ -13,7 +13,7 @@ quick'n'dirty:
 3. Make some ssh-keys and put the pub key into your sophos to access loginuser (need root once to get cert REF names)
 4. edit the copycerts.sh to your needs (ip, domain etc and most important the REF IDs to your own Cert and lets encrypt CA, see https://www.linet-services.de/sophos-utm-lets-encrypt-automatische-zertifikatsupdates/)
 5. let dehydrate get your certs
-5. put the utm_update-certificate.pl script in the same dir as the updater script
+5. put the utm_update-certificate.pl script in the same dir as the updater script (/etc/dehydrated/certs/yourdomain.com)
 6. run ./copycerts.sh (this will upload the nessesary files, run the cert updater and than delete everything aftwards)
 7. should now have your lets encrypt certs
     
